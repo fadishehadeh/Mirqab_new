@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Georgia', 'Times New Roman', 'Times', serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #1F2937;
+    background-color: #ffffff;
+  }
+
+  /* Ensure serif font is applied to all text elements */
+  h1, h2, h3, h4, h5, h6, p, span, div, a, button, input, textarea, select {
+    font-family: 'Georgia', 'Times New Roman', 'Times', serif;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-block px-6 py-3 border-2 border-accent text-accent rounded-lg hover:bg-accent hover:text-white transition-all duration-300 font-medium;
+  }
+  
+  .btn-secondary {
+    @apply inline-block px-6 py-3 bg-primary text-white rounded-lg hover:bg-opacity-90 transition-all duration-300 font-medium;
+  }
+  
+  .card {
+    @apply bg-white p-6 rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl;
+  }
+  
+  .section-padding {
+    @apply py-16 px-6 sm:px-8 lg:px-16;
+  }
+  
+  .container-max {
+    @apply max-w-7xl mx-auto;
+  }
+  
+  .prose-custom {
+    @apply prose lg:prose-lg max-w-none;
+  }
+  
+  .hero-height {
+    @apply h-[550px] md:h-[400px] sm:h-[300px];
+  }
+}
