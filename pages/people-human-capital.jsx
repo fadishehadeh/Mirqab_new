@@ -123,7 +123,7 @@ export default function PeopleHumanCapitalPage() {
         </motion.section>
       </main>
 
-      <Footer />
+      <Footer preFooterImage="/images/people-footer.jpg" />
     </>
   )
 }

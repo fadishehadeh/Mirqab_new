@@ -26,13 +26,28 @@ export default function InvestmentAssetClassesPage() {
       
       <main className="section-padding space-y-16">
         {/* Header Section */}
-        <motion.section 
+        <motion.section
           {...fadeInVariant}
           className="container-max text-center"
         >
           <h1 className="text-4xl lg:text-5xl font-bold text-primary mb-8">INVESTMENT ASSET CLASSES</h1>
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-4xl mx-auto space-y-6">
             <p className="text-lg text-charcoal leading-relaxed">{assetClasses.intro}</p>
+          </div>
+        </motion.section>
+
+        {/* Diversification Section */}
+        <motion.section
+          {...fadeInVariant}
+          className="container-max"
+        >
+          <div className="bg-gradient-to-r from-primary/5 to-accent/5 p-8 rounded-2xl">
+            <h2 className="text-3xl font-semibold text-primary text-center mb-8">1. Diversification is Our Discipline</h2>
+            <div className="max-w-4xl mx-auto">
+              <p className="text-lg text-charcoal leading-relaxed text-center">
+                {assetClasses.diversification}
+              </p>
+            </div>
           </div>
         </motion.section>
 
@@ -49,17 +64,27 @@ export default function InvestmentAssetClassesPage() {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
-                className="card"
+                className="card group hover:shadow-2xl transition-all duration-500"
               >
                 <div className="flex flex-col md:flex-row md:items-start md:space-x-6">
                   <div className="flex-shrink-0 mb-4 md:mb-0">
-                    <div className="w-16 h-16 bg-gradient-to-br from-primary to-accent rounded-lg flex items-center justify-center">
-                      <span className="text-white font-bold text-lg">{index + 1}</span>
+                    <div className="w-16 h-16 bg-gradient-to-br from-primary to-accent rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                      <span className="text-white font-bold text-lg">{index + 2}</span>
                     </div>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-semibold text-primary mb-4">{assetClass.title}</h3>
-                    <p className="text-charcoal leading-relaxed">{assetClass.text}</p>
+                    <h3 className="text-2xl font-semibold text-primary mb-4 group-hover:text-accent transition-colors duration-300">{assetClass.title}</h3>
+                    <p className="text-charcoal leading-relaxed mb-4">{assetClass.text}</p>
+                    {assetClass.details && (
+                      <ul className="space-y-2">
+                        {assetClass.details.map((detail, detailIndex) => (
+                          <li key={detailIndex} className="flex items-start space-x-3">
+                            <span className="text-accent font-bold mt-1 text-sm">•</span>
+                            <span className="text-charcoal text-sm leading-relaxed">{detail}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    )}
                   </div>
                 </div>
               </motion.div>
@@ -89,7 +114,7 @@ export default function InvestmentAssetClassesPage() {
         </motion.section>
       </main>
 
-      <Footer />
+      <Footer preFooterImage="/images/asset-classes-footer.jpg" />
     </>
   )
 }

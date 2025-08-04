@@ -12,16 +12,21 @@ This directory contains all images used throughout the Al Mirqab Capital website
 5. **hero-human-capital.jpg** - Professional team collaboration and development (for People & Human Capital page)
 6. **hero-contact.jpg** - Modern office building and business district (for Contact page)
 
-### Pre-Footer Image (1920x400px minimum):
-7. **business-professionals.jpg** - Professional business people walking (appears before footer on all pages)
+### Pre-Footer Images (1920x400px minimum):
+7. **about-footer.jpg** - Professional business people for About Us page
+8. **contact-footer.jpg** - Modern office communication imagery for Contact page
+9. **governance-footer.jpg** - Corporate boardroom for Governance & Risk page
+10. **portfolio-footer.jpg** - Financial markets imagery for Investment Portfolio page
+11. **asset-classes-footer.jpg** - Diverse investment assets for Asset Classes page
+12. **people-footer.jpg** - Professional team collaboration for People & Human Capital page
 
 ### Homepage Card Images (400x128px minimum):
-8. **card-vision-mission.jpg** - Corporate vision imagery
-9. **card-governance-risk.jpg** - Boardroom or governance imagery
-10. **card-investment-portfolio.jpg** - Financial charts, portfolio management
-11. **card-asset-classes.jpg** - Diverse investment assets
-12. **card-people-capital.jpg** - Professional team imagery
-13. **card-contact.jpg** - Modern office contact imagery
+13. **card-vision-mission.jpg** - Corporate vision imagery
+14. **card-governance-risk.jpg** - Boardroom or governance imagery
+15. **card-investment-portfolio.jpg** - Financial charts, portfolio management
+16. **card-asset-classes.jpg** - Diverse investment assets
+17. **card-people-capital.jpg** - Professional team imagery
+18. **card-contact.jpg** - Modern office contact imagery
 
 ## Image Specifications:
 

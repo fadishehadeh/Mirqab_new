@@ -12,7 +12,9 @@ export default function Document() {
         />
         <meta name="description" content="Al Mirqab Capital - A trusted investment institution shaping long-term prosperity for future generations" />
         <meta name="keywords" content="investment, capital, Qatar, family office, wealth management" />
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
         <link rel="icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" href="/favicon.svg" />
       </Head>
       <body>
         <Main />

@@ -57,42 +57,52 @@ export const investmentPortfolio = {
 
 export const assetClasses = {
   intro: "At Al Mirqab Capital, we strategically invest across a wide spectrum of asset classes to preserve capital, generate long-term value, and capture opportunities globally. Our diversified portfolio spans both traditional and alternative investments, enabling us to navigate market cycles while optimizing risk-adjusted returns.",
+  diversification: "Through disciplined asset allocation, deep research, and global partnerships, Al Mirqab Capital ensures prudent exposure to multiple asset classes. This diversified approach allows us to adapt to changing market conditions while staying true to our mandate of sustainable value creation for generations to come.",
   classes: [
     {
       title: "Equities",
-      text: "We invest in listed companies across developed and emerging markets, targeting long-term capital appreciation and dividend income. Our equity strategy includes: Blue-chip stocks; Growth and value equities; Sector-specific and thematic investments; Private placements and pre-IPO opportunities."
+      text: "We invest in listed companies across developed and emerging markets, targeting long-term capital appreciation and dividend income. Our equity strategy includes:",
+      details: ["Blue-chip stocks", "Growth and value equities", "Sector-specific and thematic investments", "Private placements and pre-IPO opportunities"]
     },
     {
       title: "Fixed Income",
-      text: "Our fixed income investments provide stability and predictable income. We allocate across: Government and sovereign bonds; Corporate bonds (investment grade and high yield); Sukuk and Shariah-compliant instruments; Emerging market debt."
+      text: "Our fixed income investments provide stability and predictable income. We allocate across:",
+      details: ["Government and sovereign bonds", "Corporate bonds (investment grade and high yield)", "Sukuk and Shariah-compliant instruments", "Emerging market debt"]
     },
     {
       title: "Real Estate",
-      text: "Real assets form a core part of our portfolio. We invest in: Commercial and retail properties; Residential developments; Logistics and industrial assets; Hospitality and mixed-use projects; Income-generating real estate and REITs."
+      text: "Real assets form a core part of our portfolio. We invest in:",
+      details: ["Commercial and retail properties", "Residential developments", "Logistics and industrial assets", "Hospitality and mixed-use projects", "Income-generating real estate and REITs"]
     },
     {
       title: "Private Equity",
-      text: "We deploy long-term capital in private companies through: Direct investments and co-investments; Growth capital and buyouts; Private equity funds and partnerships; Venture capital in early and growth-stage startups."
+      text: "We deploy long-term capital in private companies through:",
+      details: ["Direct investments and co-investments", "Growth capital and buyouts", "Private equity funds and partnerships", "Venture capital in early and growth-stage startups"]
     },
     {
       title: "Infrastructure",
-      text: "Infrastructure investments offer long-term, stable cash flows and inflation protection. Our focus areas include: Transport and logistics infrastructure; Renewable energy and utilities; Digital infrastructure (data centers, fiber networks); Public-private partnership (PPP) projects."
+      text: "Infrastructure investments offer long-term, stable cash flows and inflation protection. Our focus areas include:",
+      details: ["Transport and logistics infrastructure", "Renewable energy and utilities", "Digital infrastructure (data centers, fiber networks)", "Public-private partnership (PPP) projects"]
     },
     {
       title: "Commodities & Natural Resources",
-      text: "To hedge inflation and diversify risk, we invest in: Precious metals (gold, silver); Energy (oil, gas, renewables); Agricultural commodities; Mining and natural resource opportunities."
+      text: "To hedge inflation and diversify risk, we invest in:",
+      details: ["Precious metals (gold, silver)", "Energy (oil, gas, renewables)", "Agricultural commodities", "Mining and natural resource opportunities"]
     },
     {
       title: "Hedge Funds & Alternative Strategies",
-      text: "We partner with leading fund managers globally to access: Multi-strategy hedge funds; Market-neutral and arbitrage strategies; Global macro and event-driven funds; Absolute return strategies."
+      text: "We partner with leading fund managers globally to access:",
+      details: ["Multi-strategy hedge funds", "Market-neutral and arbitrage strategies", "Global macro and event-driven funds", "Absolute return strategies"]
     },
     {
       title: "Digital Assets & Innovation",
-      text: "Recognizing the growing importance of digital transformation, we selectively allocate to: Cryptocurrencies and blockchain platforms; Tokenized real assets; Fintech and decentralized finance (DeFi) ventures; AI and emerging tech investments."
+      text: "Recognizing the growing importance of digital transformation, we selectively allocate to:",
+      details: ["Cryptocurrencies and blockchain platforms", "Tokenized real assets", "Fintech and decentralized finance (DeFi) ventures", "AI and emerging tech investments"]
     },
     {
       title: "Cash & Cash Equivalents",
-      text: "We maintain liquidity and manage short-term needs through: Money market instruments; Treasury bills; Short-term deposits and Islamic cash products."
+      text: "We maintain liquidity and manage short-term needs through:",
+      details: ["Money market instruments", "Treasury bills", "Short-term deposits and Islamic cash products"]
     }
   ]
 }

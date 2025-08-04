@@ -25,10 +25,15 @@ These appear on the homepage navigation cards:
 - **People & Human Capital** - Professional team, human resources
 - **Contact** - Modern office contact, communication imagery
 
-### 3. Pre-Footer Image (1920x400px minimum)
-This appears before the footer on all pages:
+### 3. Pre-Footer Images (1920x400px minimum)
+These appear before the footer on each page:
 
-- **business-professionals.jpg** - Professional business people (similar to the reference image with two business women walking)
+- **about-footer.jpg** - Professional business people for About Us page
+- **contact-footer.jpg** - Modern office communication imagery for Contact page
+- **governance-footer.jpg** - Corporate boardroom for Governance & Risk page
+- **portfolio-footer.jpg** - Financial markets imagery for Investment Portfolio page
+- **asset-classes-footer.jpg** - Diverse investment assets for Asset Classes page
+- **people-footer.jpg** - Professional team collaboration for People & Human Capital page
 
 ## Image Specifications
 
@@ -64,7 +69,7 @@ All images should align with Al Mirqab Capital's brand values:
 
 ## Priority Order
 
-1. **High Priority**: business-professionals.jpg (pre-footer image)
+1. **High Priority**: Pre-footer images (different image per page for visual variety)
 2. **Medium Priority**: Homepage card images
 3. **Lower Priority**: Hero banner images (current placeholders are functional)
 

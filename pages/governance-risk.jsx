@@ -78,6 +78,24 @@ export default function GovernanceRiskPage() {
           </div>
         </motion.section>
 
+        {/* Governance Philosophy Section */}
+        <motion.section
+          {...fadeInVariant}
+          className="container-max"
+        >
+          <div className="bg-gradient-to-r from-primary/5 to-accent/5 p-8 rounded-2xl">
+            <h2 className="text-3xl font-semibold text-primary text-center mb-8">OUR GOVERNANCE PHILOSOPHY</h2>
+            <div className="max-w-4xl mx-auto space-y-6">
+              <p className="text-lg text-charcoal leading-relaxed">
+                At Al Mirqab Capital, robust corporate governance is the cornerstone of our success. We maintain clear structures and oversight mechanisms to ensure transparency, risk management, and alignment of interests.
+              </p>
+              <p className="text-lg text-charcoal leading-relaxed">
+                Our governance framework ensures that all investment and operational decisions are made with transparency, fiduciary responsibility, and alignment with the family's long-term objectives.
+              </p>
+            </div>
+          </div>
+        </motion.section>
+
         {/* Governance Pillars Grid */}
         <motion.section 
           {...fadeInVariant}
@@ -121,12 +139,15 @@ export default function GovernanceRiskPage() {
         </motion.section>
 
         {/* Safeguards Section */}
-        <motion.section 
+        <motion.section
           {...fadeInVariant}
           className="bg-secondary py-16"
         >
           <div className="container-max">
-            <h2 className="text-3xl font-semibold text-primary text-center mb-12">Additional Safeguards</h2>
+            <h2 className="text-3xl font-semibold text-primary text-center mb-8">FAMILY OFFICE SAFEGUARDS</h2>
+            <p className="text-lg text-charcoal text-center mb-12 max-w-3xl mx-auto">
+              To protect the family's interests across generations, we maintain:
+            </p>
             <div className="max-w-4xl mx-auto space-y-6">
               {governanceRisk.safeguards.map((safeguard, index) => (
                 <motion.div
@@ -144,9 +165,24 @@ export default function GovernanceRiskPage() {
             </div>
           </div>
         </motion.section>
+
+        {/* Building Resilience Section */}
+        <motion.section
+          {...fadeInVariant}
+          className="container-max"
+        >
+          <div className="bg-gradient-to-r from-accent/5 to-primary/5 p-8 rounded-2xl">
+            <h2 className="text-3xl font-semibold text-primary text-center mb-8">BUILDING RESILIENCE THROUGH GOVERNANCE</h2>
+            <div className="max-w-4xl mx-auto">
+              <p className="text-lg text-charcoal leading-relaxed text-center">
+                We believe that sound governance and proactive risk management are key to sustaining value across generations. Our disciplined, structured, and forward-looking approach positions Al Mirqab Capital as a trusted steward of long-term family wealth.
+              </p>
+            </div>
+          </div>
+        </motion.section>
       </main>
 
-      <Footer />
+      <Footer preFooterImage="/images/governance-footer.jpg" />
     </>
   )
 }
