@@ -61,16 +61,16 @@ export default function HeroSlider() {
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 1 }}
-          className="absolute inset-0 bg-cover bg-center flex items-center justify-center text-center text-white"
+          className="absolute inset-0 bg-cover bg-center flex items-center justify-center sm:items-start sm:pt-24 md:items-center text-center text-white"
           style={{ backgroundImage: `url(${slides[currentSlide].image})` }}
         >
           <div className="absolute inset-0 bg-black bg-opacity-40"></div>
-          <div className="container-max px-6 relative z-10">
+          <div className="container-max px-6 relative z-10 sm:max-w-4xl">
             <motion.h1
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="text-4xl lg:text-5xl font-bold mb-6"
+              className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6"
             >
               {slides[currentSlide].title}
             </motion.h1>
@@ -78,7 +78,7 @@ export default function HeroSlider() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
-              className="text-xl lg:text-2xl mb-8 max-w-3xl mx-auto"
+              className="text-lg sm:text-xl lg:text-2xl mb-6 sm:mb-8 max-w-3xl mx-auto"
             >
               {slides[currentSlide].subtitle}
             </motion.p>
@@ -87,9 +87,9 @@ export default function HeroSlider() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.6 }}
             >
-              <Link 
-                href={slides[currentSlide].buttonLink} 
-                className="btn-primary bg-accent text-white hover:bg-opacity-90 px-8 py-4 font-semibold text-lg transition-all duration-300 inline-block"
+              <Link
+                href={slides[currentSlide].buttonLink}
+                className="btn-primary bg-accent text-white hover:bg-opacity-90 px-6 sm:px-8 py-3 sm:py-4 font-semibold text-base sm:text-lg transition-all duration-300 inline-block"
               >
                 {slides[currentSlide].buttonText}
               </Link>

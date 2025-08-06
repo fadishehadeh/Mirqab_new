@@ -46,13 +46,28 @@ export default function InvestmentAssetClassesPage() {
           {...fadeInVariant}
           className="container-max"
         >
-          <div className="bg-gradient-to-r from-primary/5 to-accent/5 p-8">
-            <h2 className="text-3xl font-semibold text-primary text-center mb-8">1. Diversification is Our Discipline</h2>
-            <div className="max-w-4xl mx-auto">
-              <p className="text-lg text-charcoal leading-relaxed text-center">
-                {assetClasses.diversification}
-              </p>
-            </div>
+          <div className="max-w-5xl mx-auto">
+            <motion.div
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="card group hover:shadow-2xl transition-all duration-500"
+            >
+              <div className="flex flex-col md:flex-row md:items-start md:space-x-6">
+                <div className="flex-shrink-0 mb-4 md:mb-0">
+                  <div className="w-16 h-16 bg-gradient-to-br from-primary to-accent flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                    <span className="text-white font-bold text-lg">1</span>
+                  </div>
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-2xl font-semibold text-primary mb-4 group-hover:text-accent transition-colors duration-300">Diversification is Our Discipline</h3>
+                  <p className="text-charcoal leading-relaxed">
+                    {assetClasses.diversification}
+                  </p>
+                </div>
+              </div>
+            </motion.div>
           </div>
         </motion.section>
 
