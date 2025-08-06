@@ -6,7 +6,7 @@ import Navigation from '@/components/Navigation'
 import HeroBanner from '@/components/HeroBanner'
 
 import Footer from '@/components/Footer'
-import { visionMission } from '@/utils/content'
+import { visionMission, heroBanners } from '@/utils/content'
 
 const fadeInVariant = {
   initial: { opacity: 0, y: 30 },
@@ -24,7 +24,12 @@ export default function AboutUsPage() {
       </Head>
 
       <Navigation />
-      <HeroBanner imageUrl="/images/about.png" alt="About Al Mirqab Capital" />
+      <HeroBanner
+        imageUrl="/images/about.png"
+        alt="About Al Mirqab Capital"
+        title={heroBanners.aboutUs.title}
+        subtitle={heroBanners.aboutUs.subtitle}
+      />
       
       <main className="section-padding space-y-16">
         {/* About Us Section */}
@@ -78,17 +83,17 @@ export default function AboutUsPage() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="text-center p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300"
+              className="text-center p-6 bg-white shadow-lg hover:shadow-xl transition-all duration-300"
             >
               {/* Value Image */}
-              <div className="w-full h-32 mb-6 rounded-lg overflow-hidden">
+              <div className="w-full h-32 mb-6 overflow-hidden">
                 <img
-                  src="/images/vision.jpg"
+                  src="/images/integrity.jpg"
                   alt="Integrity - Trust and Ethics"
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                 />
               </div>
-              <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-6">
+              <div className="w-16 h-16 bg-primary flex items-center justify-center mx-auto mb-6">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                 </svg>
@@ -105,17 +110,17 @@ export default function AboutUsPage() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="text-center p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300"
+              className="text-center p-6 bg-white shadow-lg hover:shadow-xl transition-all duration-300"
             >
               {/* Value Image */}
-              <div className="w-full h-32 mb-6 rounded-lg overflow-hidden">
+              <div className="w-full h-32 mb-6 overflow-hidden">
                 <img
                   src="/images/fi.jpg"
                   alt="Stewardship - Responsible Management"
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                 />
               </div>
-              <div className="w-16 h-16 bg-accent rounded-full flex items-center justify-center mx-auto mb-6">
+              <div className="w-16 h-16 bg-accent flex items-center justify-center mx-auto mb-6">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
                 </svg>
@@ -132,17 +137,17 @@ export default function AboutUsPage() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.3 }}
-              className="text-center p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300"
+              className="text-center p-6 bg-white shadow-lg hover:shadow-xl transition-all duration-300"
             >
               {/* Value Image */}
-              <div className="w-full h-32 mb-6 rounded-lg overflow-hidden">
+              <div className="w-full h-32 mb-6 overflow-hidden">
                 <img
-                  src="/images/about.jpg"
+                  src="/images/excellence.jpg"
                   alt="Excellence - Quality and Achievement"
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                 />
               </div>
-              <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-6">
+              <div className="w-16 h-16 bg-primary flex items-center justify-center mx-auto mb-6">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
                 </svg>
@@ -159,17 +164,17 @@ export default function AboutUsPage() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.4 }}
-              className="text-center p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300"
+              className="text-center p-6 bg-white shadow-lg hover:shadow-xl transition-all duration-300"
             >
               {/* Value Image */}
-              <div className="w-full h-32 mb-6 rounded-lg overflow-hidden">
+              <div className="w-full h-32 mb-6 overflow-hidden">
                 <img
                   src="/images/services.jpg"
                   alt="Discretion - Confidentiality and Privacy"
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                 />
               </div>
-              <div className="w-16 h-16 bg-accent rounded-full flex items-center justify-center mx-auto mb-6">
+              <div className="w-16 h-16 bg-accent flex items-center justify-center mx-auto mb-6">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
                 </svg>
@@ -186,17 +191,17 @@ export default function AboutUsPage() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.5 }}
-              className="text-center p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 md:col-span-2 lg:col-span-1"
+              className="text-center p-6 bg-white shadow-lg hover:shadow-xl transition-all duration-300 md:col-span-2 lg:col-span-1"
             >
               {/* Value Image */}
-              <div className="w-full h-32 mb-6 rounded-lg overflow-hidden">
+              <div className="w-full h-32 mb-6 overflow-hidden">
                 <img
                   src="/images/contact.jpg"
                   alt="Collaboration - Partnership and Teamwork"
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                 />
               </div>
-              <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-6">
+              <div className="w-16 h-16 bg-primary flex items-center justify-center mx-auto mb-6">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
                 </svg>

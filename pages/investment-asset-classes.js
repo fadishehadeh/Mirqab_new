@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 import Navigation from '@/components/Navigation'
 import HeroBanner from '@/components/HeroBanner'
 import Footer from '@/components/Footer'
-import { assetClasses } from '@/utils/content'
+import { assetClasses, heroBanners } from '@/utils/content'
 
 const fadeInVariant = {
   initial: { opacity: 0, y: 30 },
@@ -22,7 +22,12 @@ export default function InvestmentAssetClassesPage() {
       </Head>
 
       <Navigation />
-      <HeroBanner imageUrl="/images/ia.jpg" alt="Investment asset classes" />
+      <HeroBanner
+        imageUrl="/images/ia.jpg"
+        alt="Investment asset classes"
+        title={heroBanners.investmentAssetClasses.title}
+        subtitle={heroBanners.investmentAssetClasses.subtitle}
+      />
       
       <main className="section-padding space-y-16">
         {/* Header Section */}
@@ -41,7 +46,7 @@ export default function InvestmentAssetClassesPage() {
           {...fadeInVariant}
           className="container-max"
         >
-          <div className="bg-gradient-to-r from-primary/5 to-accent/5 p-8 rounded-2xl">
+          <div className="bg-gradient-to-r from-primary/5 to-accent/5 p-8">
             <h2 className="text-3xl font-semibold text-primary text-center mb-8">1. Diversification is Our Discipline</h2>
             <div className="max-w-4xl mx-auto">
               <p className="text-lg text-charcoal leading-relaxed text-center">
@@ -68,7 +73,7 @@ export default function InvestmentAssetClassesPage() {
               >
                 <div className="flex flex-col md:flex-row md:items-start md:space-x-6">
                   <div className="flex-shrink-0 mb-4 md:mb-0">
-                    <div className="w-16 h-16 bg-gradient-to-br from-primary to-accent rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                    <div className="w-16 h-16 bg-gradient-to-br from-primary to-accent flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
                       <span className="text-white font-bold text-lg">{index + 2}</span>
                     </div>
                   </div>
@@ -106,7 +111,7 @@ export default function InvestmentAssetClassesPage() {
               href="#"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="inline-block px-8 py-4 bg-accent text-white rounded-lg hover:bg-opacity-90 transition-all duration-300 font-medium"
+              className="inline-block px-8 py-4 bg-accent text-white hover:bg-opacity-90 transition-all duration-300 font-medium"
             >
               Learn More About Our Strategy
             </motion.a>

@@ -5,7 +5,8 @@ import { ChevronDownIcon } from '@heroicons/react/24/outline'
 import Navigation from '@/components/Navigation'
 import HeroBanner from '@/components/HeroBanner'
 import Footer from '@/components/Footer'
-import { governanceRisk } from '@/utils/content'
+import GovernancePillarsCarousel from '@/components/GovernancePillarsCarousel'
+import { governanceRisk, heroBanners } from '@/utils/content'
 
 const fadeInVariant = {
   initial: { opacity: 0, y: 30 },
@@ -16,7 +17,7 @@ const fadeInVariant = {
 
 const AccordionItem = ({ title, items, isOpen, onToggle }) => {
   return (
-    <div className="border border-gray-200 rounded-lg overflow-hidden">
+    <div className="border border-gray-200 overflow-hidden">
       <button
         onClick={onToggle}
         className="w-full px-6 py-4 text-left bg-white hover:bg-gray-50 transition-colors duration-200 flex justify-between items-center"
@@ -63,7 +64,12 @@ export default function GovernanceRiskPage() {
       </Head>
 
       <Navigation />
-      <HeroBanner imageUrl="/images/govhero.jpg" alt="Corporate governance and risk management" />
+      <HeroBanner
+        imageUrl="/images/governance.jpg"
+        alt="Corporate governance and risk management"
+        title={heroBanners.governanceRisk.title}
+        subtitle={heroBanners.governanceRisk.subtitle}
+      />
       
       <main className="section-padding space-y-16">
         {/* Header Section */}
@@ -83,7 +89,7 @@ export default function GovernanceRiskPage() {
           {...fadeInVariant}
           className="container-max"
         >
-          <div className="bg-gradient-to-r from-primary/5 to-accent/5 p-8 rounded-2xl">
+          <div className="bg-gradient-to-r from-primary/5 to-accent/5 p-8">
             <h2 className="text-3xl font-semibold text-primary text-center mb-8">OUR GOVERNANCE PHILOSOPHY</h2>
             <div className="max-w-4xl mx-auto space-y-6">
               <p className="text-lg text-charcoal leading-relaxed">
@@ -96,28 +102,8 @@ export default function GovernanceRiskPage() {
           </div>
         </motion.section>
 
-        {/* Governance Pillars Grid */}
-        <motion.section 
-          {...fadeInVariant}
-          className="container-max"
-        >
-          <h2 className="text-3xl font-semibold text-primary text-center mb-12">Governance Pillars</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {governanceRisk.pillars.map((pillar, index) => (
-              <motion.div
-                key={pillar.title}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-                className="card"
-              >
-                <h3 className="text-xl font-semibold text-primary mb-4">{pillar.title}</h3>
-                <p className="text-charcoal leading-relaxed">{pillar.text}</p>
-              </motion.div>
-            ))}
-          </div>
-        </motion.section>
+        {/* Governance Pillars Carousel */}
+        <GovernancePillarsCarousel pillars={governanceRisk.pillars} />
 
         {/* Risk Framework Accordion */}
         <motion.section 
@@ -156,7 +142,7 @@ export default function GovernanceRiskPage() {
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.6, delay: index * 0.1 }}
-                  className="flex items-start space-x-3 bg-white p-6 rounded-lg shadow-md"
+                  className="flex items-start space-x-3 bg-white p-6 shadow-md"
                 >
                   <span className="text-accent font-bold text-xl mt-1">•</span>
                   <p className="text-lg text-charcoal leading-relaxed">{safeguard}</p>
@@ -171,7 +157,7 @@ export default function GovernanceRiskPage() {
           {...fadeInVariant}
           className="container-max"
         >
-          <div className="bg-gradient-to-r from-accent/5 to-primary/5 p-8 rounded-2xl">
+          <div className="bg-gradient-to-r from-accent/5 to-primary/5 p-8">
             <h2 className="text-3xl font-semibold text-primary text-center mb-8">BUILDING RESILIENCE THROUGH GOVERNANCE</h2>
             <div className="max-w-4xl mx-auto">
               <p className="text-lg text-charcoal leading-relaxed text-center">

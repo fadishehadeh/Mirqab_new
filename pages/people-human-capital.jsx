@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 import Navigation from '@/components/Navigation'
 import HeroBanner from '@/components/HeroBanner'
 import Footer from '@/components/Footer'
-import { peopleCapital } from '@/utils/content'
+import { peopleCapital, heroBanners } from '@/utils/content'
 
 const fadeInVariant = {
   initial: { opacity: 0, y: 30 },
@@ -22,7 +22,12 @@ export default function PeopleHumanCapitalPage() {
       </Head>
 
       <Navigation />
-      <HeroBanner imageUrl="/images/people.jpg" alt="People and human capital development" />
+      <HeroBanner
+        imageUrl="/images/people.jpg"
+        alt="People and human capital development"
+        title={heroBanners.peopleHumanCapital.title}
+        subtitle={heroBanners.peopleHumanCapital.subtitle}
+      />
       
       <main className="section-padding space-y-16">
         {/* Header Section */}
@@ -50,7 +55,7 @@ export default function PeopleHumanCapitalPage() {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
-                className="flex items-start space-x-3 bg-white p-6 rounded-lg shadow-md"
+                className="flex items-start space-x-3 bg-white p-6 shadow-md"
               >
                 <span className="text-accent font-bold text-xl mt-1">•</span>
                 <p className="text-lg text-charcoal leading-relaxed">{principle}</p>
@@ -115,7 +120,7 @@ export default function PeopleHumanCapitalPage() {
               href="/contact"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="inline-block px-8 py-4 bg-accent text-white rounded-lg hover:bg-opacity-90 transition-all duration-300 font-medium"
+              className="inline-block px-8 py-4 bg-accent text-white hover:bg-opacity-90 transition-all duration-300 font-medium"
             >
               Explore Opportunities
             </motion.a>

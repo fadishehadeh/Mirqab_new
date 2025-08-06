@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 import Navigation from '@/components/Navigation'
 import HeroBanner from '@/components/HeroBanner'
 import Footer from '@/components/Footer'
-import { investmentPortfolio } from '@/utils/content'
+import { investmentPortfolio, heroBanners } from '@/utils/content'
 
 const fadeInVariant = {
   initial: { opacity: 0, y: 30 },
@@ -22,7 +22,12 @@ export default function InvestmentPortfolioPage() {
       </Head>
 
       <Navigation />
-      <HeroBanner imageUrl="/images/portfolio.png" alt="Investment portfolio management" />
+      <HeroBanner
+        imageUrl="/images/portfolio.png"
+        alt="Investment portfolio management"
+        title={heroBanners.investmentPortfolio.title}
+        subtitle={heroBanners.investmentPortfolio.subtitle}
+      />
       
       <main className="section-padding space-y-16">
         {/* Header Section */}
@@ -64,7 +69,7 @@ export default function InvestmentPortfolioPage() {
 
                   <div className="relative z-10">
                     <div className="flex items-start space-x-4">
-                      <div className="flex-shrink-0 w-12 h-12 bg-accent text-white rounded-full flex items-center justify-center font-bold text-lg shadow-lg">
+                      <div className="flex-shrink-0 w-12 h-12 bg-accent text-white flex items-center justify-center font-bold text-lg shadow-lg">
                         {sector.number}
                       </div>
                       <div>

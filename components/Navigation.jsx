@@ -109,7 +109,7 @@ export default function Navigation() {
             {/* Mobile Menu Button */}
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="lg:hidden p-2 rounded-md transition-colors text-primary hover:text-accent"
+              className="lg:hidden p-2 transition-colors text-primary hover:text-accent"
             >
               {isOpen ? (
                 <XMarkIcon className="h-6 w-6" />

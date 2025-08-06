@@ -89,7 +89,7 @@ export default function HeroSlider() {
             >
               <Link 
                 href={slides[currentSlide].buttonLink} 
-                className="btn-primary bg-accent text-white hover:bg-opacity-90 px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 inline-block"
+                className="btn-primary bg-accent text-white hover:bg-opacity-90 px-8 py-4 font-semibold text-lg transition-all duration-300 inline-block"
               >
                 {slides[currentSlide].buttonText}
               </Link>
@@ -101,7 +101,7 @@ export default function HeroSlider() {
       {/* Navigation Arrows */}
       <button
         onClick={prevSlide}
-        className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-20 hover:bg-opacity-30 text-white p-3 rounded-full transition-all duration-300 z-20"
+        className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-20 hover:bg-opacity-30 text-white p-3 transition-all duration-300 z-20"
       >
         <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
@@ -110,7 +110,7 @@ export default function HeroSlider() {
       
       <button
         onClick={nextSlide}
-        className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-20 hover:bg-opacity-30 text-white p-3 rounded-full transition-all duration-300 z-20"
+        className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-20 hover:bg-opacity-30 text-white p-3 transition-all duration-300 z-20"
       >
         <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -123,7 +123,7 @@ export default function HeroSlider() {
           <button
             key={index}
             onClick={() => goToSlide(index)}
-            className={`w-3 h-3 rounded-full transition-all duration-300 ${
+            className={`w-3 h-3 transition-all duration-300 ${
               index === currentSlide 
                 ? 'bg-white' 
                 : 'bg-white bg-opacity-50 hover:bg-opacity-75'
@@ -133,7 +133,7 @@ export default function HeroSlider() {
       </div>
 
       {/* Slide Counter */}
-      <div className="absolute bottom-8 right-8 bg-black bg-opacity-30 text-white px-3 py-1 rounded-full text-sm z-20">
+      <div className="absolute bottom-8 right-8 bg-black bg-opacity-30 text-white px-3 py-1 text-sm z-20">
         {currentSlide + 1} / {slides.length}
       </div>
     </div>

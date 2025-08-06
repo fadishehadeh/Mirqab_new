@@ -100,9 +100,9 @@ export default function Footer({ preFooterImage }) {
               </ul>
 
               {/* Newsletter Signup */}
-              <div className="bg-gray-800 rounded-lg p-6">
+              <div className="bg-gray-800 p-6">
                 <div className="flex items-center mb-4">
-                  <div className="w-8 h-8 bg-accent rounded-full flex items-center justify-center mr-3">
+                  <div className="w-8 h-8 bg-accent flex items-center justify-center mr-3">
                     <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 17h5l-5 5v-5z" />
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 19.5A2.5 2.5 0 0 1 1.5 17H6a2 2 0 0 1 2 2v.5z" />
@@ -119,12 +119,12 @@ export default function Footer({ preFooterImage }) {
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     placeholder="Enter your email"
-                    className="flex-1 px-4 py-2 bg-gray-700 text-white rounded-l-lg border border-gray-600 focus:outline-none focus:border-accent"
+                    className="flex-1 px-4 py-2 bg-gray-700 text-white border border-gray-600 focus:outline-none focus:border-accent"
                     required
                   />
                   <button
                     type="submit"
-                    className="px-6 py-2 bg-accent text-white rounded-r-lg hover:bg-opacity-90 transition-colors duration-200"
+                    className="px-6 py-2 bg-accent text-white hover:bg-opacity-90 transition-colors duration-200"
                   >
                     <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />

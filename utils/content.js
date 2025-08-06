@@ -130,3 +130,37 @@ export const contactPage = {
   formFields: ["Full Name", "Email Address", "Phone Number", "What are your needs?", "Write Message…"],
   submitLabel: "Submit Your Profile"
 }
+
+// Hero Banner Content for all pages
+export const heroBanners = {
+  aboutUs: {
+    title: "About Al Mirqab Capital",
+    subtitle: "A trusted investment institution shaping long-term prosperity for future generations",
+    description: "Guided by prudent investment philosophy and disciplined governance, we manage a globally diversified portfolio while actively contributing to the economic and social development of Qatar and the wider region."
+  },
+  governanceRisk: {
+    title: "Corporate Governance & Risk Management",
+    subtitle: "Building trust through robust governance and comprehensive risk oversight",
+    description: "We are committed to upholding the highest standards of integrity, accountability, and operational excellence through our comprehensive governance framework and disciplined risk management approach."
+  },
+  investmentPortfolio: {
+    title: "Investment Portfolio",
+    subtitle: "Diversified, Disciplined, and Global",
+    description: "Our strategic investment approach spans multiple asset classes and geographies, ensuring sustainable value creation while preserving capital for future generations."
+  },
+  investmentAssetClasses: {
+    title: "Investment Asset Classes",
+    subtitle: "Strategic diversification across traditional and alternative investments",
+    description: "We strategically invest across a wide spectrum of asset classes to preserve capital, generate long-term value, and capture opportunities globally through disciplined asset allocation."
+  },
+  peopleHumanCapital: {
+    title: "People & Human Capital Development",
+    subtitle: "Our most valuable asset is our people",
+    description: "The strength of our investments, partnerships, and long-term success is built on a foundation of exceptional talent, professional integrity, and continuous development."
+  },
+  contact: {
+    title: "Get in Touch",
+    subtitle: "Connect with Al Mirqab Capital",
+    description: "We welcome opportunities to discuss partnerships, investments, and how we can work together to create sustainable value for future generations."
+  }
+}
