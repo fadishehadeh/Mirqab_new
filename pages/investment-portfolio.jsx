@@ -95,14 +95,7 @@ export default function InvestmentPortfolioPage() {
               <p className="text-lg text-charcoal leading-relaxed mb-8">
                 {investmentPortfolio.sustainability}
               </p>
-              <motion.a
-                href="#"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="btn-primary"
-              >
-                Download Portfolio Overview
-              </motion.a>
+
             </div>
           </div>
         </motion.section>
